@@ -48,10 +48,10 @@ class QuizApp:
                 self.window.destroy()
         else:
             self.answer_buttons[index]['text'] = "Wrong Answer"
-            self.answer_buttons[index]['state'] = 'disabled'
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python quiz.py <filename.csv>")
+        print("Please format correctly: python quiz.py <filename.csv>")
         sys.exit(1)
     QuizApp(sys.argv[1])
